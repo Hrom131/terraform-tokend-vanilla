@@ -79,7 +79,7 @@ resource tokend_signer_rule "stamp_creator" {
   entry_type = "stamp"
 }
 
-resource tokend_account_rule "data_creator" { 
+resource tokend_signer_rule "data_creator" { 
   action = "create"
   entry_type = "data"
   entry = {
@@ -87,7 +87,7 @@ resource tokend_account_rule "data_creator" {
   }
 }
 
-resource tokend_account_rule "data_updater" { 
+resource tokend_signer_rule "data_updater" { 
   action = "update"
   entry_type = "data"
   entry = {
@@ -95,7 +95,7 @@ resource tokend_account_rule "data_updater" {
   }
 }
 
-resource tokend_account_rule "data_remover" { 
+resource tokend_signer_rule "data_remover" { 
   action = "remove"
   entry_type = "data"
   entry = {
