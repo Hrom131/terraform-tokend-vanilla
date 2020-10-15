@@ -54,6 +54,30 @@ resource tokend_signer_rule "sale_checker" {
   }
 }
 
+resource tokend_signer_rule "data_creator" { 
+  action = "create"
+  entry_type = "data"
+  entry = {
+    type = "*"
+  }
+}
+
+resource tokend_signer_rule "data_updater" { 
+  action = "update"
+  entry_type = "data"
+  entry = {
+    type = "*"
+  }
+}
+
+resource tokend_signer_rule "data_remover" { 
+  action = "remove"
+  entry_type = "data"
+  entry = {
+    type = "*"
+  }
+}
+
 resource tokend_signer_rule "kv_manager" {
   action = "manage"
   entry_type = "key_value"
