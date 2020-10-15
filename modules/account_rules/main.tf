@@ -74,7 +74,29 @@ resource tokend_account_rule "reviewable_request_creator" { // TODO shrink scope
   }
 }
 
+resource tokend_account_rule "data_creator" { 
+  action = "create"
+  entry_type = "data"
+  entry = {
+    data_type = "*"
+  }
+}
 
+resource tokend_account_rule "data_updater" { 
+  action = "update"
+  entry_type = "data"
+  entry = {
+    data_type = "*"
+  }
+}
+
+resource tokend_account_rule "data_remover" { 
+  action = "remove"
+  entry_type = "data"
+  entry = {
+    data_type = "*"
+  }
+}
 
 resource tokend_account_rule "sale_participant" {
   action     = "participate"
