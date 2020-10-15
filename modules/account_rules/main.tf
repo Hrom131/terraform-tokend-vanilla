@@ -78,7 +78,7 @@ resource tokend_account_rule "data_creator" {
   action = "create"
   entry_type = "data"
   entry = {
-    data_type = "*"
+    type = "*"
   }
 }
 
@@ -86,7 +86,7 @@ resource tokend_account_rule "data_updater" {
   action = "update"
   entry_type = "data"
   entry = {
-    data_type = "*"
+    type = "*"
   }
 }
 
@@ -94,7 +94,7 @@ resource tokend_account_rule "data_remover" {
   action = "remove"
   entry_type = "data"
   entry = {
-    data_type = "*"
+    type = "*"
   }
 }
 
