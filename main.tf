@@ -57,6 +57,9 @@ module "account_roles" {
 
   general_rules = [
     "${module.account_rules.balance_creator}",
+    "${module.account_rules.data_creator}",
+    "${module.account_rules.data_remover}",
+    "${module.account_rules.data_updater}",
     "${module.account_rules.sender}",
     "${module.account_rules.payment_receiver}",
     "${module.account_rules.atomic_swap_receiver}",
