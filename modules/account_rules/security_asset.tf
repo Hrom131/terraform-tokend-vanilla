@@ -138,6 +138,16 @@ resource tokend_account_rule "default_for_security_buy_offer_creator" {
   }
 }
 
+resource tokend_account_rule "test_offer_creator" {
+  action = "create"
+  entry_type = "offer"
+  entry = {
+    is_buy = false
+    quote_asset_type = "*"
+    base_asset_type = "*"
+  }
+}
+
 
 resource tokend_account_rule "security_issuance_receiver" {
   action     = "receive_issuance"
